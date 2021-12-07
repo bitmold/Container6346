@@ -29,6 +29,23 @@ module Container6346
 		"Z" => 38
 	}
 
+
+	def self.validate_container?(container)
+		regex = /^[a-z]{3}[ujz]\d{7}/i
+		if not regex.match(container) 
+			raise "Invalid container #{container}"
+		end
+
+		owner_code = container[0...3]
+		category_identifier = container[3]
+		serial_number = container[4...10]
+		check_digit = container[10]
+
+		self.validate?(owner_code, category_identifier, serial_number, check_digit)
+	end
+
+
+
 	def self.validate?(owner_code, category_identifier, serial_number, check_digit)
 		if not owner_code.length == 3
 			raise "Invalid owner code"
