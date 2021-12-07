@@ -75,6 +75,6 @@ module Container6346
 
 
 	def self.only_digits?(string)
-  		string.scan(/[a-z]/i).empty?
+		string !~ /\D/
 	end
 end
