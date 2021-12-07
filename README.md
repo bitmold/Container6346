@@ -13,9 +13,9 @@ gem install container6346
 require 'container6346'
 container = 'TOLU4734787'
 if Container6346.validate_container?(container)
-	puts '#{contianer} is ISO 6346 compliant'
+	puts '#{container} is ISO 6346 compliant'
 else
-	puts 'Contianer is not ISO 6346 compliant'
+	puts 'container is not ISO 6346 compliant'
 end
 
 ``` 
