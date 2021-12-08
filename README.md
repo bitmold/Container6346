@@ -1,5 +1,5 @@
 # Ruby ISO 6346 Validator
-Ggem to validate an <a href="https://en.wikipedia.org/wiki/ISO_6346#Calculation_step_1">ISO 6346 shipping container</a>.
+Gem to validate an <a href="https://en.wikipedia.org/wiki/ISO_6346#Calculation_step_1">ISO 6346 shipping container</a>.
 
 
 ## Usage 
