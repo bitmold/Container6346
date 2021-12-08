@@ -15,7 +15,7 @@ container = 'TOLU4734787'
 if Container6346.validate_container?(container)
 	puts '#{container} is ISO 6346 compliant'
 else
-	puts 'container is not ISO 6346 compliant'
+	puts '#{container} is not ISO 6346 compliant'
 end
 
 ``` 
